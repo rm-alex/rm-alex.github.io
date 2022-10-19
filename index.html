@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+   <script src="js/mouse_control.js"></script>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="stylesheets/style.css">
+
+   <title>Alexander Jonic</title>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="200">
+   <div id="home">
+      <!-- Header -->
+      <section>
+         <div class="d-flex flex-row justify-content-center align-items-center" align="center" style="margin: 15px 0px;">
+            <div class="p-2">
+               <div style="position:relative;">
+                  <img src="content/bubs/bub1.png" id="bub" style="position:absolute; width: 200px; height: 200px;left:-125px; top:-15px; visibility:hidden;pointer-events:none">
+                  <img src="content/alex_profile.jpg" class="img-fluid mx-auto profile-pic" alt="Alexander Jonic" id="profile_picture" onmouseover="onMouseOver()" onmouseout="onMouseOut()" style="display:inline">
+               </div>
+            </div>
+            <div class="p-2">
+               <h1 style="margin:auto;">Alexander Jonic</h1>
+               <hr/>
+               <div>
+                  <ul style="padding: 5px; margin: auto;">
+                     <li class="social-media">
+                        <a href="http://www.linkedin.com/in/alex-jonic"><img src="content/social_media_icons/linkedin_hover.png" style="animation-delay: 0.15s;"></a>
+                     </li>
+                     <li class="social-media">
+                        <a href="https://github.com/rm-alex"><img src="content/social_media_icons/github_hover.png" style="animation-delay: 0.3s;"></a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-sm navbar-expand-md navbar-expand-lg bg-dark navbar-dark sticky-top" style="padding-top: 15px; padding-bottom: 15px;">
+         <div class="container d-none d-sm-block">
+            <ul class="navbar-nav">
+               <li class="nav-item d-none d-sm-inline">
+                  <a class="nav-link active" href="#home">Home</a>
+               </li>
+               <!-- <li class="nav-item d-none d-sm-inline">
+               <a class="nav-link" href="">Résumé</a>
+            </li> -->
+            <li class="nav-item d-none d-sm-inline">
+               <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline">
+               <a class="nav-link" href="#contact">Contact Me</a>
+            </li>
+         </ul>
+      </div>
+      <ul class="navbar-nav d-block d-sm-none">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <a class="nav-link active" href="#home">Home</a>
+               </li>
+               <!-- <li>
+               <a class="nav-link" href="">Résumé</a>
+            </li> -->
+            <li>
+               <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li>
+               <a class="nav-link" href="#contact">Contact Me</a>
+            </li>
+         </ul>
+      </div>
+   </ul>
+</nav>
+
+<section>
+
+</section>
+
+<!-- About Me -->
+<section>
+   <div class="container-fluid section" style="background-color:#FFF; text-align:center; height: 100%;">
+      <div class="flex-fill w-50" style="margin: 0 auto;" align="center">
+         <h2 class="section-header">About</h2>
+         <div class="about_text">
+            <p>Hello! I'm Alex Jonic, and I am a game developer.</p>
+            <p>I've had a fascination with video games ever since I was young.
+               <br/>Some of my earliest childhood memories consist of watching
+               <br/>my dad play games like Tomb Raider and King's Quest.
+               <br/>Since then, I've grown to see video games as art,
+               <br/>and their development as a creative medium.
+            </p>
+            <p>I graduated from Lewis University in the Spring of 2019 with a Bachelors of Science in Computer Science.</p>
+            <p>In my down time, I work as a freelance digital artist,
+               <br/>and can often be found working on my own personal video game
+               <br/>projects using Unity and Unreal Engine.
+            </p>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- Information Section -->
+<section>
+   <div class="container-fluid section px-3" style="background-color:#343a40; height:100%; color:#FFF;">
+      <div class="w-75 justify-content-center"style="margin:auto">
+         <h3 class="content-header w-100" style="text-align:center">Information</h3>
+         <hr class="w-75"/>
+         <div class="row mt-5 mb-5">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+               <div class="card h-100">
+                  <div class="card-block block-1">
+                     <h3 class="card-title">Languages</h3>
+                     <p class="card-text">
+                        C++, C#, Python, Java, x86 Assembly
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+               <div class="card h-100">
+                  <div class="card-block block-2">
+                     <h3 class="card-title">Tools</h3>
+                     <p class="card-text">
+                        Unity, Unreal Engine 4, Visual Studio
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+               <div class="card h-100">
+                  <div class="card-block block-3">
+                     <h3 class="card-title">Technologies</h3>
+                     <p class="card-text">
+                        OpenGL, WebGL, Mono, MySQL, Git, Subversion
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <hr class="w-75"/>
+
+         <div class="row mt-5">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 pb-4">
+               <div class="card h-100">
+                  <h3 class="card-title">Super Huey™ III (2020)</h3>
+                  <p>
+                     Tags:
+                     <span class="badge badge-primary">C++</span>
+                     <span class="badge badge-primary">Lead Gameplay Programmer</span>
+                     <span class="badge badge-primary">Webfoot Games, Inc</span>
+                     <!-- <span class="badge badge-primary">Mac</span> -->
+                  </p>
+                  <div class="d-flex flex-row portfolio-video">
+                     <div class="embed-responsive embed-responsive-16by9">
+                        <video playsinline autoplay muted loop>
+                           <source src="https://steamcdn-a.akamaihd.net/steam/apps/256802897/movie480_vp9.webm?t=1602856136" type="video/webm">
+                              Your browser does not support this video.
+                           </video>
+                        </div>
+                     </div>
+                     <p>
+                        <span><a href="portfolio.html#sh3" class="btn btn-primary btn-md" role="button">Read More<i class="fa fa-angle-double-right ml-2"></i></a></span>
+                        <span><a href="https://store.steampowered.com/app/1341780/Super_Huey_III/" class="btn btn-success btn-md" role="button">Steam Store Page<i class="fa fa-angle-double-right ml-2"></i></a></span>
+                     </p>
+                  </div>
+               </div>
+               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 pb-4">
+                  <div class="card h-100">
+                     <h3 class="card-title">Super Chopper</h3>
+                     <p>
+                        Tags:
+                        <span class="badge badge-primary">C++</span>
+                        <span class="badge badge-primary">Lead Programmer</span>
+                        <span class="badge badge-primary">Webfoot Games, Inc</span>
+                        <!-- <span class="badge badge-primary">Mac</span> -->
+                     </p>
+                     <div class="d-flex flex-row portfolio-video">
+                        <div class="embed-responsive embed-responsive-16by9">
+                           <video playsinline autoplay muted loop>
+                              <source src="https://cdn.akamai.steamstatic.com/steam/apps/256829168/movie480_vp9.webm?t=1618508350" type="video/webm">
+                                 Your browser does not support this video.
+                              </video>
+                           </div>
+                        </div>
+                        <p>
+                           <span><a href="portfolio.html#sc" class="btn btn-primary btn-md" role="button">Read More<i class="fa fa-angle-double-right ml-2"></i></a></span>
+                           <span><a href="https://store.steampowered.com/app/1373560/Super_Chopper/" class="btn btn-success btn-md" role="button">Steam Store Page<i class="fa fa-angle-double-right ml-2"></i></a></span>
+                        </p>
+                     </div>
+                  </div>
+            </div>
+         </div>
+      </div>
+   </section>
+</div> <!-- This tells the navbar to stop stickying at this point. -->
+
+<!-- Contact Me -->
+<section id="contact">
+   <div class="container-fluid section mb-5" style="background-color:#FFF; height: 100%;">
+      <div class="row justify-content-center mb-5">
+         <div class="col-md-6">
+            <h3 class="section-header w-100" style="text-align:center">Contact Me</h3>
+            <hr/>
+            <p class="pb-2 w-100" style="text-align:center">
+               Want to get in contact with me? Send me an email using the form below!
+            </p>
+            <form action="https://getsimpleform.com/messages?form_api_token=200fe3f8766fa7be64daabf60168eca4" method="post">
+               <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+               <input type='hidden' name='redirect_to' value='https://alex.jonic.net' />
+
+               <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+               </div>
+               <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" name="name">
+               </div>
+               <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+               </div>
+               <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- End HTML -->
+</div>
+
+
+</body>
+</html>

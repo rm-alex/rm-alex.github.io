@@ -1,0 +1,233 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.section {
+  padding: 50px 30px;
+}
+
+.section-header{
+  padding-bottom:15px;
+}
+.social-media {
+  display: inline;
+  text-align:center;
+  padding: 0px 5px;
+}
+
+.social-media img {
+  height:32px;
+  width:32px;
+  -webkit-animation: social-media-start 1.5s 1 ease-out;
+  animation-fill-mode: both;
+}
+
+.portfolio-video {
+  max-width: 800px;
+  padding-bottom: 15px;
+}
+
+div.about_text {
+  font-family: "Arial";
+  font-size: 18px;
+  font-style: italic;
+}
+
+img.profile-pic {
+  display:block;
+  box-shadow: 0px 0px 15px #CCC;
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+  width: 200px;
+}
+
+hr {
+  background-color: #ccc;
+}
+
+/* XS */
+.card .card-block .card-title {
+  color:#FFF;
+  //background-color: #FF0;
+  font-size:1rem;
+  font-weight: bold;
+}
+
+/* Small */
+@media (min-width: 26em){
+  .card .card-block .card-title {
+    color:#FFF;
+    //background-color: #0FF;
+    font-size:1.2rem;
+  }
+}
+
+/* Small */
+@media (min-width: 36em){
+  .card .card-block .card-title {
+    color:#FFF;
+    //background-color: #F0F;
+    font-size:1rem;
+  }
+}
+
+/* Small */
+@media (min-width: 49em){
+  .card .card-block .card-title {
+    color:#FFF;
+    //background-color: #F00;
+    font-size:1rem;
+  }
+}
+
+/* Medium */
+@media (min-width: 56em){
+  .card .card-block .card-title {
+    color:#FFF;
+    //background-color: #0F0;
+    font-size:1.4rem;
+  }
+}
+
+/* Large */
+@media (min-width: 75em){
+  .card .card-block .card-title {
+    color:#FFF;
+    //background-color: #00F;
+    font-size:1.6rem;
+  }
+}
+
+.card {
+  padding: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border: 1px solid #555;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+  background-color:#343a40;
+}
+
+.card a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 0px 25px -4px rgb(158, 158, 158);
+  -moz-box-shadow: 0px 0px 25px -4px rgb(158, 158, 158);
+  box-shadow: 0px 0px 25px -4px rgb(158, 158, 158);
+}
+
+.card .card-block {
+  padding-left: 72px;
+  position: relative;
+}
+
+.card .card-block:before {
+  position: absolute;
+  font-size:39px;
+  color: #007b5e;
+  left: 0;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition:transform .2s ease-in-out;
+}
+
+.card .block-1:before {
+  content:"";
+  width:64px;
+  height:64px;
+  background-image: url("../content/languages_icon.png");
+  background-size: 64px 64px;
+  background-repeat: no-repeat;
+}
+
+.card .block-2:before {
+  content:"";
+  width:64px;
+  height:64px;
+  background-image: url("../content/tools_icon.png");
+  background-size: 64px 64px;
+  background-repeat: no-repeat;
+}
+
+.card .block-3:before {
+  content:"";
+  width:64px;
+  height:64px;
+  background-image: url("../content/technologies_icon.png");
+  background-size: 64px 64px;
+  background-repeat: no-repeat;
+}
+
+.card .block-4:before {
+  content:"";
+  width:64px;
+  height:64px;
+  background-image: url("../content/pke_icon.png");
+  background-size: 64px 64px;
+  background-repeat: no-repeat;
+}
+
+.card .block-5:before {
+  content:"";
+  width:64px;
+  height:64px;
+  background-image: url("../content/duane_icon.png");
+  background-size: 64px 64px;
+  background-repeat: no-repeat;
+}
+
+.card .block-6:before {
+  content:"";
+  width:64px;
+  height:64px;
+  background-image: url("../content/dreamcast_icon.png");
+  background-size: 64px 64px;
+  background-repeat: no-repeat;
+}
+
+.card .block-7:before {
+  content:"";
+  width:64px;
+  height:64px;
+  background-image: url("../content/bunbot_icon.png");
+  background-size: 64px 64px;
+  background-repeat: no-repeat;
+}
+
+.card:hover .card-block:before {
+  /*transform: rotateY(360deg);
+  transition: 1s all ease;
+  */
+
+  -webkit-animation: rotate-icon 1.5s infinite linear;
+
+}
+
+@-webkit-keyframes rotate-icon {
+  from{
+    -webkit-transform:rotateY(0deg);
+  }
+  to {
+    -webkit-transform:rotateY(359deg);
+  }
+}
+
+@-webkit-keyframes social-media-start {
+  0% {
+    -webkit-transform:translate(0px, -10px);
+    opacity: 0;
+  }
+
+  1% {
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform:translate(0px, 0px);
+    opacity: 1;
+  }
+}
