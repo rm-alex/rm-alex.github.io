@@ -11,6 +11,8 @@
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
    <script src="js/mouse_control.js"></script>
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+   <script src="js/captcha.js"></script>
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="stylesheets/style.css">
@@ -222,23 +224,25 @@
             <p class="pb-2 w-100" style="text-align:center">
                Want to get in contact with me? Send me an email using the form below!
             </p>
-            <form action="https://getsimpleform.com/messages?form_api_token=200fe3f8766fa7be64daabf60168eca4" method="post">
+            <form action="https://formspree.io/f/mzbwarkw" method="post">
                <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
                <input type='hidden' name='redirect_to' value='https://alex.jonic.net' />
 
                <div class="form-group">
                   <label for="email">Email Address</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
                </div>
                <div class="form-group">
                   <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" name="name">
+                  <input type="text" class="form-control" id="name" name="name" required>
                </div>
                <div class="form-group">
                   <label for="message">Message</label>
-                  <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                  <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
                </div>
-               <button type="submit" class="btn btn-primary">Send</button>
+               <div class="g-recaptcha" data-sitekey="6LeN8pAiAAAAAHZNNRLuYQema2GANDcFvJ_Ae0Pc" data-callback="dataCallback" data-error-callback="dataErrorCallback" data-expired-callback="dataExpiredCallback"></div>
+               </p>
+               <button id="contact-submit" type="submit" class="btn btn-primary" disabled>Send</button>
             </form>
          </div>
       </div>
